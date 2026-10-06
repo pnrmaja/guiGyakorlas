@@ -11,7 +11,7 @@ package main;
 public class FilmekForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form FilmekForm
+     * Creates new form FilmekForm2
      */
     public FilmekForm() {
         initComponents();
@@ -26,32 +26,32 @@ public class FilmekForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblCim = new javax.swing.JLabel();
-        lblAlcim = new javax.swing.JLabel();
-        scrollPanelFilmek = new javax.swing.JScrollPane();
+        pnlFo = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblFilmek = new javax.swing.JTable();
-        pnlAtlag = new javax.swing.JPanel();
-        lblAtlagPontszam = new javax.swing.JLabel();
+        pnlStatisztika = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        lblFilm = new javax.swing.JLabel();
+        lblÁtlag = new javax.swing.JLabel();
+        lblLegjobb = new javax.swing.JLabel();
+        lblLegrosszabb = new javax.swing.JLabel();
+        lblKorhatár = new javax.swing.JLabel();
+        lblNemKorhatar = new javax.swing.JLabel();
+        lblFilmdb = new javax.swing.JLabel();
         lblAtlagPont = new javax.swing.JLabel();
-        pnlFilmekSzama1 = new javax.swing.JPanel();
-        lblFilmekSzama = new javax.swing.JLabel();
-        lblFilmekSzamaErtek1 = new javax.swing.JLabel();
-        pnlKorhataros = new javax.swing.JPanel();
-        lblKorhatar = new javax.swing.JLabel();
-        lblKorhatarDb = new javax.swing.JLabel();
-        pnlLegjobb = new javax.swing.JPanel();
-        lblLegjobbErtekeles = new javax.swing.JLabel();
-        lblLegjobbPont = new javax.swing.JLabel();
+        lblLegjobbErt = new javax.swing.JLabel();
+        lblLegrosszabbErt = new javax.swing.JLabel();
+        lblKorhatardb = new javax.swing.JLabel();
+        lblNemKorhatardb = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("FILMEK TÁBLÁZAT");
+        setTitle("Filmek");
 
-        lblCim.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        lblCim.setText("Filmek");
+        pnlFo.setToolTipText("");
 
-        lblAlcim.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblAlcim.setText("MVC gyakorló feladat");
+        jTabbedPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MVC", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         tblFilmek.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -67,131 +67,139 @@ public class FilmekForm extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblFilmek);
 
-        scrollPanelFilmek.setViewportView(jScrollPane1);
+        jTabbedPane1.addTab("Filmek", jScrollPane1);
 
-        pnlAtlag.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        pnlAtlag.setPreferredSize(new java.awt.Dimension(140, 90));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Statisztika"));
 
-        lblAtlagPontszam.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lblAtlagPontszam.setText("ÁTLAG PONTSZÁM");
+        lblFilm.setText("Filmek száma:");
+
+        lblÁtlag.setText("Átlagos pontszám:");
+
+        lblLegjobb.setText("Legjobb értékelés:");
+
+        lblLegrosszabb.setText("Legrosszabb értékelés:");
+
+        lblKorhatár.setText("Korhatáros filmek:");
+
+        lblNemKorhatar.setText("Nem korhatáros filmek:");
+
+        lblFilmdb.setText("5 db");
 
         lblAtlagPont.setText("8.14");
 
-        javax.swing.GroupLayout pnlAtlagLayout = new javax.swing.GroupLayout(pnlAtlag);
-        pnlAtlag.setLayout(pnlAtlagLayout);
-        pnlAtlagLayout.setHorizontalGroup(
-            pnlAtlagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlAtlagLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(lblAtlagPontszam)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAtlagLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblAtlagPont, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
+        lblLegjobbErt.setText("8.9");
+
+        lblLegrosszabbErt.setText("7.0");
+
+        lblKorhatardb.setText("2 db");
+
+        lblNemKorhatardb.setText("3db");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(lblLegrosszabb, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(43, 43, 43))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblNemKorhatar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblNemKorhatardb, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblKorhatár, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblKorhatardb, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(lblLegrosszabbErt, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblÁtlag)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblAtlagPont, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblFilm, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblFilmdb, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblLegjobb, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(52, 52, 52)
+                                .addComponent(lblLegjobbErt, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(0, 35, Short.MAX_VALUE))
         );
-        pnlAtlagLayout.setVerticalGroup(
-            pnlAtlagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlAtlagLayout.createSequentialGroup()
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblAtlagPontszam)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblFilm)
+                    .addComponent(lblFilmdb))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblAtlagPont)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        pnlFilmekSzama1.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        pnlFilmekSzama1.setPreferredSize(new java.awt.Dimension(140, 90));
-
-        lblFilmekSzama.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lblFilmekSzama.setText("FILMEK SZÁMA");
-
-        lblFilmekSzamaErtek1.setText("5 db");
-
-        javax.swing.GroupLayout pnlFilmekSzama1Layout = new javax.swing.GroupLayout(pnlFilmekSzama1);
-        pnlFilmekSzama1.setLayout(pnlFilmekSzama1Layout);
-        pnlFilmekSzama1Layout.setHorizontalGroup(
-            pnlFilmekSzama1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFilmekSzama1Layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
-                .addGroup(pnlFilmekSzama1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblFilmekSzama)
-                    .addGroup(pnlFilmekSzama1Layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(lblFilmekSzamaErtek1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(30, 30, 30))
-        );
-        pnlFilmekSzama1Layout.setVerticalGroup(
-            pnlFilmekSzama1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlFilmekSzama1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblFilmekSzama)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblÁtlag)
+                    .addComponent(lblAtlagPont))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblFilmekSzamaErtek1)
-                .addContainerGap(16, Short.MAX_VALUE))
-        );
-
-        pnlKorhataros.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        pnlKorhataros.setPreferredSize(new java.awt.Dimension(140, 90));
-
-        lblKorhatar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lblKorhatar.setText("KORHATÁROS FILMEK");
-
-        lblKorhatarDb.setText("2 db");
-
-        javax.swing.GroupLayout pnlKorhatarosLayout = new javax.swing.GroupLayout(pnlKorhataros);
-        pnlKorhataros.setLayout(pnlKorhatarosLayout);
-        pnlKorhatarosLayout.setHorizontalGroup(
-            pnlKorhatarosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlKorhatarosLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(pnlKorhatarosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlKorhatarosLayout.createSequentialGroup()
-                        .addComponent(lblKorhatar)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlKorhatarosLayout.createSequentialGroup()
-                        .addComponent(lblKorhatarDb, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(49, 49, 49))))
-        );
-        pnlKorhatarosLayout.setVerticalGroup(
-            pnlKorhatarosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlKorhatarosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblKorhatar)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblLegjobb)
+                    .addComponent(lblLegjobbErt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblKorhatarDb)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        pnlLegjobb.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        pnlLegjobb.setPreferredSize(new java.awt.Dimension(140, 90));
-
-        lblLegjobbErtekeles.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lblLegjobbErtekeles.setText("LEGJOBB ÉRTÉKELÉS");
-
-        lblLegjobbPont.setText("8.9");
-
-        javax.swing.GroupLayout pnlLegjobbLayout = new javax.swing.GroupLayout(pnlLegjobb);
-        pnlLegjobb.setLayout(pnlLegjobbLayout);
-        pnlLegjobbLayout.setHorizontalGroup(
-            pnlLegjobbLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlLegjobbLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblLegjobbPont, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49))
-            .addGroup(pnlLegjobbLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblLegjobbErtekeles)
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-        pnlLegjobbLayout.setVerticalGroup(
-            pnlLegjobbLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlLegjobbLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblLegjobbErtekeles)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblLegrosszabb)
+                    .addComponent(lblLegrosszabbErt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblLegjobbPont)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblKorhatár)
+                    .addComponent(lblKorhatardb))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNemKorhatar)
+                    .addComponent(lblNemKorhatardb))
+                .addContainerGap(85, Short.MAX_VALUE))
+        );
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/film.png"))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        javax.swing.GroupLayout pnlStatisztikaLayout = new javax.swing.GroupLayout(pnlStatisztika);
+        pnlStatisztika.setLayout(pnlStatisztikaLayout);
+        pnlStatisztikaLayout.setHorizontalGroup(
+            pnlStatisztikaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlStatisztikaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
+                .addGap(26, 26, 26))
+        );
+        pnlStatisztikaLayout.setVerticalGroup(
+            pnlStatisztikaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlStatisztikaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlStatisztikaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(61, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Statisztika", pnlStatisztika);
+
+        javax.swing.GroupLayout pnlFoLayout = new javax.swing.GroupLayout(pnlFo);
+        pnlFo.setLayout(pnlFoLayout);
+        pnlFoLayout.setHorizontalGroup(
+            pnlFoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
+        );
+        pnlFoLayout.setVerticalGroup(
+            pnlFoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlFoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -200,39 +208,14 @@ public class FilmekForm extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblAlcim, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCim, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(pnlFilmekSzama1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(pnlAtlag, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(pnlLegjobb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(pnlKorhataros, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))))
-            .addComponent(scrollPanelFilmek)
+                .addComponent(pnlFo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblCim)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblAlcim)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollPanelFilmek, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pnlFilmekSzama1, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
-                    .addComponent(pnlAtlag, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
-                    .addComponent(pnlLegjobb, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
-                    .addComponent(pnlKorhataros, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addComponent(pnlFo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 22, Short.MAX_VALUE))
         );
 
         pack();
@@ -264,6 +247,7 @@ public class FilmekForm extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(FilmekForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -274,22 +258,24 @@ public class FilmekForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblAlcim;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel lblAtlagPont;
-    private javax.swing.JLabel lblAtlagPontszam;
-    private javax.swing.JLabel lblCim;
-    private javax.swing.JLabel lblFilmekSzama;
-    private javax.swing.JLabel lblFilmekSzamaErtek1;
-    private javax.swing.JLabel lblKorhatar;
-    private javax.swing.JLabel lblKorhatarDb;
-    private javax.swing.JLabel lblLegjobbErtekeles;
-    private javax.swing.JLabel lblLegjobbPont;
-    private javax.swing.JPanel pnlAtlag;
-    private javax.swing.JPanel pnlFilmekSzama1;
-    private javax.swing.JPanel pnlKorhataros;
-    private javax.swing.JPanel pnlLegjobb;
-    private javax.swing.JScrollPane scrollPanelFilmek;
+    private javax.swing.JLabel lblFilm;
+    private javax.swing.JLabel lblFilmdb;
+    private javax.swing.JLabel lblKorhatardb;
+    private javax.swing.JLabel lblKorhatár;
+    private javax.swing.JLabel lblLegjobb;
+    private javax.swing.JLabel lblLegjobbErt;
+    private javax.swing.JLabel lblLegrosszabb;
+    private javax.swing.JLabel lblLegrosszabbErt;
+    private javax.swing.JLabel lblNemKorhatar;
+    private javax.swing.JLabel lblNemKorhatardb;
+    private javax.swing.JLabel lblÁtlag;
+    private javax.swing.JPanel pnlFo;
+    private javax.swing.JPanel pnlStatisztika;
     private javax.swing.JTable tblFilmek;
     // End of variables declaration//GEN-END:variables
 }
